@@ -1,14 +1,14 @@
 Welcome to pyEPR :beers:! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(see [arXiv:2010.00620](https://arxiv.org/abs/2010.00620))
 ===================
+### Automated Python module for the design and quantization of Josephson quantum circuits
+
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/zlatko-minev/pyEPR)
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/zlatko-minev/pyEPR)
-[![star this repo](http://githubbadges.com/star.svg?user=zlatko-minev&repo=pyEPR&style=flat)](https://github.com/zlatko-minev/pyEPR)
-[![fork this repo](http://githubbadges.com/fork.svg?user=zlatko-minev&repo=pyEPR&style=flat)](https://github.com/zlatko-minev/pyEPR/fork)
-[![Anaconda-Server Badge](https://anaconda.org/conda-forge/pyepr-quantum/badges/installer/conda.svg)](https://conda.anaconda.org/conda-forge)
+[![Star pyEPR](https://img.shields.io/badge/⭐-Star%20pyEPR-blue?style=flat)](https://github.com/zlatko-minev/pyEPR/stargazers)
+[![Fork pyEPR](https://img.shields.io/badge/🍴-Fork%20pyEPR-blue?style=flat)](https://github.com/zlatko-minev/pyEPR/fork)
+<br>
 [![PyPI version](https://badge.fury.io/py/pyEPR-quantum.svg)](https://badge.fury.io/py/pyEPR-quantum)
 [![DOI](https://zenodo.org/badge/101073856.svg)](https://zenodo.org/badge/latestdoi/101073856)
- 
-### Automated Python module for the design and quantization of Josephson quantum circuits
 
 
 ### Documentation
@@ -32,7 +32,7 @@ Welcome to pyEPR :beers:! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(see [arXiv:2010.00620](
 ## Who uses pyEPR?
 * Yale University, Michel Devoret lab [QLab](https://qulab.eng.yale.edu/), CT, USA
 * Yale University, Rob Schoelkopf lab [RSL](https://rsl.yale.edu/), CT, USA
-* [IBM Quantum](https://www.ibm.com/quantum-computing/)
+* [IBM Quantum](https://www.ibm.com/quantum-computing/) and IBM's Qiskit Metal
 * [QUANTIC](https://team.inria.fr/quantic/people.html#) (QUANTUM INFORMATION CIRCUITS), PARISINRIA, ENS, MINES PARISTECH, UPMC, CNRS. Groups of Zaki Leghtas and team. France
 * [Quantum Circuit Group](http://www.physinfo.fr/) Benjamin Huard, Ecole Normale Supérieure de Lyon, France
 * Emanuel Flurin, CEA Saclay, France
@@ -55,6 +55,7 @@ Welcome to pyEPR :beers:! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(see [arXiv:2010.00620](
 * Alice&Bob, France
 * Centre for Quantum Technologies / Qcrew
 * Quantum Device Lab ETHZ; Andreas Wallraff
+* Bleximo
 * ... and many more! (Please e-mail `zlatko.minev@aya.yale.edu` with updates.)
 
 
