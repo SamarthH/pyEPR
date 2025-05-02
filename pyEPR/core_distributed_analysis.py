@@ -717,6 +717,40 @@ class DistributedAnalysis(object):
         I = exp.evaluate(phase=90)
         self.design.Clear_Field_Clac_Stack()
         return I
+    
+    def calc_integral_J_surf_mag_square(self, variation: str, surface: list):
+        """Integral of Magnitude Square of Surface Current over the surface area for Mode J.
+        This is useful for calculating magnetic field contribution due
+        to kinetic inductance
+
+        Args:
+            variation (str): A string identifier of the variation,
+                such as '0', '1', ...
+            surface (list): List of surfaces to integrate over
+        """
+        lv = self._get_lv(variation)
+        int_J = 0.
+        for surf in surface:
+            calcobject = CalcObject([], self.setup)
+
+            vecJ = calcobject.getQty("Jsurf")
+            A = vecJ.norm_2()
+            # B = vecJ.conj()
+            # A = A.dot(B)
+            # A = A.real()
+            A = A.integrate_surf(name=surf)
+
+            int_J += A.evaluate(lv=lv)
+        return int_J
+
+    def calc_energy_kinetic_inductance_without_junction(self, variation: str):
+        try:
+            integral_J_mag_square = self.calc_integral_J_surf_mag_square(
+                variation, self.pinfo.assign_perfE)
+            return self.pinfo.inductance_per_square * 1e-9 * integral_J_mag_square
+        except Exception as e:
+            print(e)
+            return 0.
 
     def calc_avg_current_J_surf_mag(self, variation: str, junc_rect: str, junc_line):
         """Peak current I_max for mode J in junction J
